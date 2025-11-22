@@ -1,0 +1,267 @@
+@media (min-width: 1600px) {
+#root {
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+body { 
+  background: #E3F2FD;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainCont{
+  position: relative;
+  background: linear-gradient(150deg, #0b0f2b, #1c1f45, #7271c9);
+  background-size: 300% 300%;
+  animation: gradientMove 18s ease-in-out infinite;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes moveClouds {
+  from { background-position: 0 0; }
+  to { background-position: -1000px 0; }
+}
+.theMainLocation{
+  height: 15px;
+  margin-left: 1vh;
+}
+.firstCard{
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+.secCard{
+  position: absolute;
+  right: 0;
+  height: 90vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2%;
+}
+.firstBoxOnFirstCard{
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 80%;
+  justify-content: center;
+  align-items:center;
+  gap: 5%;
+}
+.secBoxInFirstCard{
+  display: flex;
+  height: 40vh;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+.positionBox{
+  width: 100%;
+  height: auto;
+}
+.degBox{
+  width: 80%;
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.degBox2{
+  width: 100%;
+  height: 12vh;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+}
+.TextInSecBoxInFirstCard{
+  color: aliceblue;
+  width: 80%;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 5vh;
+  margin-bottom: 10px;
+}
+.threeDiv{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+}
+.divInThreeDiv{
+  width: 25%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+.locationWeatherBox{
+  width: 45%;
+  height: 20vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: solid rgb(207, 207, 207) 0.1px;
+  transition: transform 0.3s ease;
+}
+.locationWeatherBox:hover{
+  background-color:rgba(255, 255, 255, 0.13) ;
+}
+.timeInDegBox{
+  color: #E3F2FD;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.EgyptText{
+  text-align: left;
+  width: 100%;
+  font-size: 3vh;
+  margin-top: 1vh;
+  margin-left: -10px;
+  display: flex;
+}
+.timeStringInFirstCard{
+  text-align: left;
+  width: 100%;
+  font-size: 1.5vh;
+  margin-bottom: 0;
+}
+.degInFirstDegBox{
+  display: flex;
+}
+.degInFirstDegBox1{
+  font-size: 8vh;
+  -webkit-text-stroke: 0.5px rgb(143, 142, 142);
+  margin-top: 1px;
+}
+.degInFirstDegBox2{
+  margin-top: 1px;
+  font-weight: 200;
+}
+.weatherToday{
+  height: 80%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10%;
+}
+.humidityIconBox{
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.humidityIcon{
+  height: 10vh;
+}
+.weatherImg{
+  height: 10vh;
+}
+.theWeatherInSecBox{
+  text-align: left;
+  margin-bottom: 5px;
+  color: #ffffffff;
+}
+.firstDivInSecCard{
+  margin-left: 5px;
+}
+.theImgInApp{
+  height: 10vh;
+}
+.theMainImgInApp{
+  height: 8vh;
+  z-index: 1;
+}
+.theMainImgInApp2{
+  height: 6vh;
+}
+.firstTextInWeatherToday{
+    font-size: 1.5vh;
+    margin: 0;
+}
+.secTextInWeatherToday{
+    font-size: 2vh;
+    margin: 0;
+  }
+  .therTextInWeatherToday{
+    width: 100%;
+    margin: 0;
+    font-size: 1.5vh;
+    height: 1vh;
+}
+.light-spot {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  width: 210px;
+  height: 210px;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.7),
+  rgba(255, 255, 255, 0)
+  );
+  filter: blur(40px);
+  transform: translate(0, 0);
+  transition: transform 0.1s ease-out;
+  z-index: 0;
+  border-radius: 50%;
+}
+.disTextInMainBox{
+  font-weight: 300;
+  font-size: 2vh;
+}
+.theHrInFirstTextInWeatherToday{
+  display: none;
+}
+.theHrInHumCard{
+  display: none;
+}}
