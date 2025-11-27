@@ -162,7 +162,7 @@ export default function FirstCard() {
                 {data? data.name : "Loading..."}
                 <p className="timeStringInFirstCard">{timeString}</p>
                 </div>
-                <img src="/public/theLocationMainImg/location-dot-solid-full (1).svg" alt="" className="theMainLocation" />
+                <img src="/theLocationMainImg/location-dot-solid-full (1).svg" alt="" className="theMainLocation" />
               </h3>
               <div className="degInFirstDegBox">
                 {/* <h1> */}
