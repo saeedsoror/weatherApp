@@ -32,11 +32,11 @@ export default function SecCard({iconsWeather} : props){
             setData(results);
         };
         getF();
-    }, [dataa]);
+    }, []);
     
     useEffect(()=>{
       AOS.init({duration : 800})
-    })
+    } , [])
     
 
 const newData = [...dataa];

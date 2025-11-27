@@ -21,7 +21,7 @@ export default function FirstCard() {
 
   useEffect(()=>{
     AOS.init({duration : 800})
-  })
+  } , [])
 
 
 
@@ -113,7 +113,7 @@ export default function FirstCard() {
     if(!el || !data) return
     const goul = Math.round(data.main.temp);
     let curent = 0;
-
+    if (goul <= 0) return;
     const speed = (1500 / goul);
     const timer = setInterval(() => {
       curent++;
