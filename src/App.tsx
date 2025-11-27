@@ -3,8 +3,9 @@ import './App.css'
 import FirstCard from './FirstCard'
 import SecCard from './SecCard'
 import './lap.css'
+import type { JSX } from 'react'
 function App() { 
-  const getWeatherIcon : string = (description: string) => {
+  const getWeatherIcon = (description: string) : JSX.Element => {
       description = description.toLowerCase();
       if (description.includes("clear")) return <img src="/public/newImg/sun.svg" alt={description} className='theImgInApp' />;
       if (description.includes("cloud")) return <img src="/public/newImg/cloudy.svg" alt={description} className='theImgInApp' />;
@@ -20,7 +21,7 @@ function App() {
     <>
       <div className="mainCont">
         <div className="theBackground"></div>
-        <FirstCard iconsWeather={getWeatherIcon} />
+        <FirstCard />
         <SecCard iconsWeather={getWeatherIcon} />
       </div> 
     </>

@@ -59,7 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2%;
+  gap: 5%;
 }
 .firstBoxOnFirstCard{
   display: flex;
@@ -100,21 +100,21 @@ body {
 }
 .degBox2{
   width: 100%;
-  height: 12vh;
+  height: 11vh;
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 30px;
+  border-radius: 40px;
 }
 .TextInSecBoxInFirstCard{
   color: aliceblue;
   width: 80%;
   text-align: left;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 5vh;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .threeDiv{
   width: 100%;
@@ -134,8 +134,8 @@ body {
   height: 10%;
 }
 .locationWeatherBox{
-  width: 45%;
-  height: 20vh;
+  width: 55%;
+  height: 17vh;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 30px;
   backdrop-filter: blur(10px);
@@ -147,7 +147,7 @@ body {
   transition: transform 0.3s ease;
 }
 .locationWeatherBox:hover{
-  background-color:rgba(255, 255, 255, 0.13) ;
+  background-color:rgba(255, 255, 255, 0.13);
 }
 .timeInDegBox{
   color: #E3F2FD;
@@ -161,7 +161,7 @@ body {
 .EgyptText{
   text-align: left;
   width: 100%;
-  font-size: 3vh;
+  font-size: 2vh;
   margin-top: 1vh;
   margin-left: -10px;
   display: flex;
@@ -176,7 +176,7 @@ body {
   display: flex;
 }
 .degInFirstDegBox1{
-  font-size: 8vh;
+  font-size: 6vh;
   -webkit-text-stroke: 0.5px rgb(143, 142, 142);
   margin-top: 1px;
 }
@@ -217,11 +217,11 @@ body {
   height: 10vh;
 }
 .theMainImgInApp{
-  height: 8vh;
+  height: 7vh;
   z-index: 1;
 }
 .theMainImgInApp2{
-  height: 6vh;
+  height: 4vh;
 }
 .firstTextInWeatherToday{
     font-size: 1.5vh;
@@ -234,7 +234,7 @@ body {
   .therTextInWeatherToday{
     width: 100%;
     margin: 0;
-    font-size: 1.5vh;
+    font-size: 1vh;
     height: 1vh;
 }
 .light-spot {
@@ -257,7 +257,7 @@ body {
 }
 .disTextInMainBox{
   font-weight: 300;
-  font-size: 2vh;
+  font-size: 1.5vh;
 }
 .theHrInFirstTextInWeatherToday{
   display: none;

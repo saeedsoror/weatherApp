@@ -1,11 +1,8 @@
-import { useEffect, useRef, useState, type JSX } from "react";
+import { useEffect, useRef, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-interface props{
-    iconsWeather: JSX.Element;
-};
 
-export default function FirstCard({iconsWeather} : props) {
+export default function FirstCard() {
   interface TimeData {
     name: string;
     weather: { main: string, description: string , icon:string }[];
@@ -17,7 +14,7 @@ export default function FirstCard({iconsWeather} : props) {
       speed: number;
       deg: number;
     };
-    dt_txt: string;
+      dt_txt: string;
     uvi: number;
     visibility: number;
   }
@@ -31,7 +28,7 @@ export default function FirstCard({iconsWeather} : props) {
 
   const [data, setData] = useState<TimeData | null>(null);
   const [timeString, setTimeString] = useState<string>("loading...");
-  const [fore , setFore] = useState<TimeData | []>([]);
+  const [fore , setFore] = useState<TimeData[]>([]);
 
 
 
@@ -128,25 +125,7 @@ export default function FirstCard({iconsWeather} : props) {
     return () => clearInterval(timer);
   },[data])
 
-  
-  // .toFixed(1)
-
-
-
-
-
-
-  const getWeatherIcon : string = (description: string) => {
-      description = description.toLowerCase();
-      if (description.includes("clear")) return "☀️";
-      if (description.includes("cloud")) return "☁️";
-      if (description.includes("rain")) return "🌧️";
-      if (description.includes("storm")) return "⛈️";
-      if (description.includes("snow")) return "❄️";
-      return "🌡️";
-    };
-
-    const getWeatherIcon2 : string = (description: string) => {
+    const getWeatherIcon2  = (description: string) => {
       description = description.toLowerCase();
       if (description.includes("clear")) return <img src="/public/newImg/sun.svg" alt={description} className='theMainImgInApp' />;
       if (description.includes("cloud")) return <img src="/public/newImg/cloudy.svg" alt={description} className='theMainImgInApp' />;
@@ -158,7 +137,7 @@ export default function FirstCard({iconsWeather} : props) {
       if (description.includes("haze")) return <img src="/public/newImg/newImg2/v.svg" alt={description} className='theMainImgInApp' />;
       return <img src="/public/thermometer.png" alt={description} className='theImgInApp' />;
     };
-    const getWeatherIcon3 : string = (description: string) => {
+    const getWeatherIcon3 = (description: string) => {
       description = description.toLowerCase();
       if (description.includes("clear")) return <img src="/public/newImg/sun.svg" alt={description} className='theMainImgInApp2' />;
       if (description.includes("cloud")) return <img src="/public/newImg/cloudy.svg" alt={description} className='theMainImgInApp2' />;
@@ -195,10 +174,8 @@ export default function FirstCard({iconsWeather} : props) {
                 }
                 <h1 ref={numRef} className="degInFirstDegBox1 num">
                   0
-                  {/* {data ? `${data.main.temp.toFixed(1)}` : "Loading temperature..."} */}
                   </h1>
                 <h1 className="degInFirstDegBox2">°C</h1>
-                {/* </h1> */}
               </div>
               <p className="disTextInMainBox">
                 {data? `The weather in ${data.name} is ${data.weather[0].description}. 

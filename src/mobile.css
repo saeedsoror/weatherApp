@@ -97,6 +97,9 @@ body {
   border-radius: 30px;
   overflow: scroll;
 }
+.degBox2::-webkit-scrollbar{
+  display: none;
+}
 .TextInSecBoxInFirstCard{
   color: aliceblue;
   width: 80%;

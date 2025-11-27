@@ -234,8 +234,7 @@ body {
   .therTextInWeatherToday{
     width: 100%;
     margin: 0;
-    font-size: 1.5vh;
-    height: 1vh;
+    font-size: 1.2vh;
 }
 .light-spot {
   position: fixed;
