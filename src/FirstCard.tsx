@@ -127,27 +127,27 @@ export default function FirstCard() {
 
     const getWeatherIcon2  = (description: string) => {
       description = description.toLowerCase();
-      if (description.includes("clear")) return <img src="/public/newImg/sun.svg" alt={description} className='theMainImgInApp' />;
-      if (description.includes("cloud")) return <img src="/public/newImg/cloudy.svg" alt={description} className='theMainImgInApp' />;
-      if (description.includes("rain")) return <img src="/public/newImg/rain.svg" alt={description} className='theMainImgInApp' />;
-      if (description.includes("storm")) return <img src="/public/newImg/storm.svg" alt={description} className='theMainImgInApp' />;
-      if (description.includes("snow")) return <img src="/public/newImg/overcast-snow.svg" alt={description} className='theMainImgInApp' />;
-      if (description.includes("mist")) return <img src="/public/newImg/fog.svg" alt={description} className='theMainImgInApp' />;
-      if (description.includes("drizzle")) return <img src="/public/newImg/drizzle.svg" alt={description} className='theMainImgInApp' />;
-      if (description.includes("haze")) return <img src="/public/newImg/newImg2/v.svg" alt={description} className='theMainImgInApp' />;
-      return <img src="/public/thermometer.png" alt={description} className='theImgInApp' />;
+      if (description.includes("clear")) return <img src="/newImg/sun.svg" alt={description} className='theMainImgInApp' />;
+      if (description.includes("cloud")) return <img src="/newImg/cloudy.svg" alt={description} className='theMainImgInApp' />;
+      if (description.includes("rain")) return <img src="/newImg/rain.svg" alt={description} className='theMainImgInApp' />;
+      if (description.includes("storm")) return <img src="/newImg/storm.svg" alt={description} className='theMainImgInApp' />;
+      if (description.includes("snow")) return <img src="/newImg/overcast-snow.svg" alt={description} className='theMainImgInApp' />;
+      if (description.includes("mist")) return <img src="/newImg/fog.svg" alt={description} className='theMainImgInApp' />;
+      if (description.includes("drizzle")) return <img src="/newImg/drizzle.svg" alt={description} className='theMainImgInApp' />;
+      if (description.includes("haze")) return <img src="/newImg/newImg2/v.svg" alt={description} className='theMainImgInApp' />;
+      return <img src="/thermometer.png" alt={description} className='theImgInApp' />;
     };
     const getWeatherIcon3 = (description: string) => {
       description = description.toLowerCase();
-      if (description.includes("clear")) return <img src="/public/newImg/sun.svg" alt={description} className='theMainImgInApp2' />;
-      if (description.includes("cloud")) return <img src="/public/newImg/cloudy.svg" alt={description} className='theMainImgInApp2' />;
-      if (description.includes("rain")) return <img src="/public/newImg/rain.svg" alt={description} className='theMainImgInApp2' />;
-      if (description.includes("storm")) return <img src="/public/newImg/storm.svg" alt={description} className='theMainImgInApp2' />;
-      if (description.includes("snow")) return <img src="/public/newImg/overcast-snow.svg" alt={description} className='theMainImgInApp2' />;
-      if (description.includes("mist")) return <img src="/public/newImg/fog.svg" alt={description} className='theMainImgInApp2' />;
-      if (description.includes("drizzle")) return <img src="/public/newImg/drizzle.svg" alt={description} className='theMainImgInApp2' />;
-      if (description.includes("haze")) return <img src="/public/newImg/newImg2/v.svg" alt={description} className='theMainImgInApp2' />;
-      return <img src="/public/thermometer.png" alt={description} className='theImgInApp' />;
+      if (description.includes("clear")) return <img src="/newImg/sun.svg" alt={description} className='theMainImgInApp2' />;
+      if (description.includes("cloud")) return <img src="/newImg/cloudy.svg" alt={description} className='theMainImgInApp2' />;
+      if (description.includes("rain")) return <img src="/newImg/rain.svg" alt={description} className='theMainImgInApp2' />;
+      if (description.includes("storm")) return <img src="/newImg/storm.svg" alt={description} className='theMainImgInApp2' />;
+      if (description.includes("snow")) return <img src="/newImg/overcast-snow.svg" alt={description} className='theMainImgInApp2' />;
+      if (description.includes("mist")) return <img src="/newImg/fog.svg" alt={description} className='theMainImgInApp2' />;
+      if (description.includes("drizzle")) return <img src="/newImg/drizzle.svg" alt={description} className='theMainImgInApp2' />;
+      if (description.includes("haze")) return <img src="/newImg/newImg2/v.svg" alt={description} className='theMainImgInApp2' />;
+      return <img src="/thermometer.png" alt={description} className='theImgInApp' />;
     };
 
   return (
@@ -219,21 +219,21 @@ export default function FirstCard() {
             <div className="oneDivInThreeDiv divInThreeDiv" data-aos="fade-up">
               <p style={{color:"#E3F2FD",textAlign:"center",width:"100%"}}>Humidity</p>
               <div className="humidityIconBox">
-                <img className="humidityIcon" src="/public/newImg/newImg2/humidity.svg" alt="" />
+                <img className="humidityIcon" src="/newImg/newImg2/humidity.svg" alt="" />
               </div>
               <p  style={{textAlign:"center",color:"#E3F2FD",width:"100%"}} className="theTherTextInOverView">{data ? data.main.humidity : "Loading..."}%</p>
             </div>
             <div className="twoDivInThreeDiv divInThreeDiv" data-aos="fade-up">
               <p style={{color:"#E3F2FD",textAlign:"center",width:"100%"}}>Wind Speed</p>
               <div className="humidityIconBox">
-                <img className="humidityIcon" src="/public/newImg/newImg2/wind.svg" alt="" />
+                <img className="humidityIcon" src="/newImg/newImg2/wind.svg" alt="" />
               </div>
               <p  style={{textAlign:"center",color:"#E3F2FD",width:"100%"}} className="theTherTextInOverView">{data ? (data.wind.speed * 3.6).toFixed(1) : "Loading..."}km/h</p>
             </div>
             <div className="threeDivInThreeDiv divInThreeDiv" data-aos="fade-up">
               <p style={{color:"#E3F2FD",textAlign:"center",width:"100%"}}>Visibility</p>
               <div className="humidityIconBox">
-                <img className="humidityIcon" src="/public/newImg/newImg2/v.svg" alt="" />
+                <img className="humidityIcon" src="/newImg/newImg2/v.svg" alt="" />
               </div>
               <p  style={{textAlign:"center",color:"#E3F2FD",width:"100%"}} className="theTherTextInOverView">{data ? (data.visibility / 1000) : "Loading..."}km</p>
             </div>
