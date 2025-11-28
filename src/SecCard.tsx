@@ -48,7 +48,7 @@ return(
                     <div className="firstDivInSecCard">
                         <p className="theWeatherInSecBox">{ele.name}</p>
                         <h4 className="theWeatherInSecBox">{ele.country}</h4>
-                        <p className="theWeatherInSecBox">{ele.name}</p>
+                        <p className="theWeatherInSecBox">{ele.description}</p>
                     </div>
                     <div className="secDivInSecCard">
                             {iconsWeather && iconsWeather(ele.description)}

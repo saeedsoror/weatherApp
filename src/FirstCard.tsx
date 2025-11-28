@@ -135,6 +135,7 @@ export default function FirstCard() {
       if (description.includes("mist")) return <img src="/newImg/fog.svg" alt={description} className='theMainImgInApp' />;
       if (description.includes("drizzle")) return <img src="/newImg/drizzle.svg" alt={description} className='theMainImgInApp' />;
       if (description.includes("haze")) return <img src="/newImg/newImg2/v.svg" alt={description} className='theMainImgInApp' />;
+      if (description.includes("fog")) return <img src="/newImg/newImg2/v.svg" alt={description} className='theImgInApp' />;
       return <img src="/thermometer.png" alt={description} className='theImgInApp' />;
     };
     const getWeatherIcon3 = (description: string) => {
@@ -147,6 +148,7 @@ export default function FirstCard() {
       if (description.includes("mist")) return <img src="/newImg/fog.svg" alt={description} className='theMainImgInApp2' />;
       if (description.includes("drizzle")) return <img src="/newImg/drizzle.svg" alt={description} className='theMainImgInApp2' />;
       if (description.includes("haze")) return <img src="/newImg/newImg2/v.svg" alt={description} className='theMainImgInApp2' />;
+      if (description.includes("fog")) return <img src="/newImg/newImg2/v.svg" alt={description} className='theImgInApp' />;
       return <img src="/thermometer.png" alt={description} className='theImgInApp' />;
     };
 

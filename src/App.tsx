@@ -13,6 +13,7 @@ function App() {
       if (description.includes("storm")) return <img src="/newImg/storm.svg" alt={description} className='theImgInApp' />;
       if (description.includes("snow")) return <img src="/newImg/overcast-snow.svg" alt={description} className='theImgInApp' />;
       if (description.includes("mist")) return <img src="/newImg/fog.svg" alt={description} className='theImgInApp' />;
+      if (description.includes("fog")) return <img src="/newImg/newImg2/v.svg" alt={description} className='theImgInApp' />;
       if (description.includes("drizzle")) return <img src="/newImg/drizzle.svg" alt={description} className='theImgInApp' />;
       if (description.includes("haze")) return <img src="/newImg/newImg2/v.svg" alt={description} className='theImgInApp' />;
       return <img src="/thermometer.png" alt={description} className='theImgInApp' />;
